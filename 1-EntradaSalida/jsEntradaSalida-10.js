@@ -6,12 +6,15 @@ function MostrarDescuento()
 {
     var importe;
     var resultado;
+    var porcentaje;
+
+    porcentaje = 25;
 
     importe = document.getElementById("importe").value;
 
-    importe = parseInt(importe);
+    importe = parseFloat(importe);
 
-    resultado = importe - (importe * 0.25);
+    resultado = importe - (importe * porcentaje / 100);
 
     document.getElementById("resultado").value = resultado;
 }
