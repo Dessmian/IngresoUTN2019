@@ -1,6 +1,6 @@
 function Mostrar()
 {
-	alert(parseInt(Math.random() * 10) +1 );
+	alert(Math.floor(Math.random() * 10) +1 );
 	
 
 }//FIN DE LA FUNCIÓN
