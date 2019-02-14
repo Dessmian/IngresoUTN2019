@@ -2,7 +2,7 @@ function Mostrar()
 {
 	var nota;
 
-	nota = (parseInt(Math.random() * 10) +1 );
+	nota = (Math.floor(Math.random() * 10) +1 );
 	
 	if (nota < 4)
 	{
