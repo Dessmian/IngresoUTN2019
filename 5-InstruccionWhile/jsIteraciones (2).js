@@ -1,6 +1,10 @@
 function Mostrar()
 {
-	alert('iteración while');
+	var numeroDecendiente;
+
+	for(numeroDecendiente = 10 ; numeroDecendiente > 0 ; numeroDecendiente -- ){
+		alert(numeroDecendiente);
+	}
 
 
 }//FIN DE LA FUNCIÓN

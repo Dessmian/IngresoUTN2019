@@ -1,7 +1,11 @@
 function Mostrar()
 {
 
-var clave = prompt("ingrese el número clave.");
-
+do{
+    password = prompt ("Ingrese la clave");
+    
+}while (password != "utn750"){
+    alert ("Bienvenido");
+}
 
 }//FIN DE LA FUNCIÓN
