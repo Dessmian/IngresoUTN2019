@@ -2,13 +2,26 @@ function Mostrar()
 {
 
 	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
+	var suma = 0;
+	var multiplicacion = 1;	
+	var respuesta;
+	var numero;
 
-
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+	do{
+		numero = parseFloat(prompt("Ingrese un numero"));
+		if(numero < 0){
+			multiplicacion = multiplicacion * numero;
+			contador++;
+		}
+		else{
+			suma = suma + numero;
+		}		
+		respuesta = prompt("Desea obtener los resultados?. Ingrese S para si");
+	}
+		while(respuesta != "S");
+document.getElementById('suma').value=suma;
+if(contador >= 1){
+document.getElementById('producto').value=multiplicacion;
+}
 
 }//FIN DE LA FUNCIÓN

@@ -1,17 +1,13 @@
 function Mostrar()
 {
-
-	var contador=0;
-	// declarar variables
+	var array_numero = [];
+	var contador = 0;
 	
-	var respuesta='si';
-
-	while(respuesta!='no')
-	{
-		
-	
-	}
-
+	do{
+		array_numero[] = contador++; //parseFloat(prompt("Ingrese un numero"));
+		contaddor++;		
+		console.log(array_numero);		
+	}while( contador < 10);
 
 
 

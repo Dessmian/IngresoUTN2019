@@ -1,9 +1,10 @@
 function Mostrar()
 {
+    var genero;
 do{
-var sexo = prompt("ingrese f ó m .");
-}while(sexo != "f" && sexo != "m"){
-    if (sexo == "f"){
+genero = prompt("ingrese f ó m .");
+}while(genero != "f" && genero != "m"){
+    if (genero == "f"){
     document.getElementById('Sexo').value="Femenino";
     }
     else{

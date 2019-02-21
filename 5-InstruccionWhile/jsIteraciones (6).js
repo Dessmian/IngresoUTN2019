@@ -1,12 +1,19 @@
 function Mostrar()
 {
-	var numeroUno = parseFloat(prompt("Ingrese un numero"));
-	var numeroDos = parseFloat(prompt("Ingrese un numero"));
-	var numeroTres = parseFloat(prompt("Ingrese un numero"));
-	var numeroCuatro = parseFloat(prompt("Ingrese un numero"));
-	var numeroCinco = parseFloat(prompt("Ingrese un numero"));
-	var sumaAcumulada = numeroUno + numeroDos + numeroTres + numeroCuatro + numeroCinco;
-document.getElementById('suma').value=sumaAcumulada.toFixed(2);
-document.getElementById('promedio').value=(sumaAcumulada/5).toFixed(2);
+	var numero;
+	var contador;
+	var suma;
+	var promedio;
+	contador = 0;
+	suma = 0;
+	do{
+		numero = parseFloat(prompt("Ingrese un numero"));
+		contador++;
+		suma = suma + numero;		
+	}while(contador <= 5){
+		promedio = suma / contador;
+		document.getElementById("suma").value = suma;
+		document.getElementById("promedio").value = promedio;	
+	}
 
 }//FIN DE LA FUNCIÓN
