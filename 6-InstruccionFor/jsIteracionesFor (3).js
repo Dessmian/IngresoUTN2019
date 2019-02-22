@@ -1,8 +1,13 @@
 function Mostrar()
 {
 
-var repetciones = prompt("ingrese el número de repeticiones");
+var repetciones = parseFloat(prompt("ingrese el número de repeticiones"));
 
-
+if(!(isNaN(repetciones)) && repetciones != Infinity){
+    for(repetciones ;repetciones > 0 ; repetciones-- ){
+    alert("Hola UTN FRA");
+    //console.log(repetciones);
+    }
+}
 
 }//FIN DE LA FUNCIÓN

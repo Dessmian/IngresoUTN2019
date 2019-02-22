@@ -1,32 +1,28 @@
 function Mostrar()
 {
-	var array_numero = [];
-	var contador = 0;
-	var mayor;
-	var menor;
-	
+	var arrayDinamico_numero = [];	
+	var numeroMayor;
+	var numeroMenor;
+	var asignadorEspacio = 0;
+	var decisionUsuario;
+	var numeroTomado;
 	do{
-		array_numero[contador] = parseFloat(prompt("Ingrese un numero"));
-		console.log(array_numero);
-		if(contador == 0)
-		{
-			mayor=array_numero[contador];
-			menor=array_numero[contador];
+		numeroTomado = parseFloat(prompt("Ingrese un numero"));		
+		if(isNaN(numeroTomado)){	
+			alert("Ingrese un numero valido");
 		}
-		if(array_numero[contador]>mayor)
-		{
-			mayor=array_numero[contador];
+		else{
+			arrayDinamico_numero[asignadorEspacio] = numeroTomado;
+			asignadorEspacio++;			
 		}
-		if(array_numero[contador]<menor)
-		{
-			menor=array_numero[contador];
-		}
-		contador++;
-		
-	}while( contador < 3);
-	alert(mayor);
-	alert(menor);
-
-
-
+		decisionUsuario = confirm("Desea agregar mas numeros?");		
+	}while(decisionUsuario == true);
+	numeroMayor = Math.max(...arrayDinamico_numero);
+	numeroMenor = Math.min(...arrayDinamico_numero);
+	if(isFinite(numeroMayor)){
+	document.getElementById("maximo").value = numeroMayor;
+	}
+	if(isFinite(numeroMenor)){
+		document.getElementById("minimo").value = numeroMenor;
+	}
 }//FIN DE LA FUNCIÓN 

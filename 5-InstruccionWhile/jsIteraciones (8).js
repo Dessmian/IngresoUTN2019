@@ -16,9 +16,9 @@ function Mostrar()
 		else{
 			suma = suma + numero;
 		}		
-		respuesta = prompt("Desea obtener los resultados?. Ingrese S para si");
+		respuesta = confirm("Desea obtener los resultados?");
 	}
-		while(respuesta != "S");
+		while(respuesta != true);
 document.getElementById('suma').value=suma;
 if(contador >= 1){
 document.getElementById('producto').value=multiplicacion;
