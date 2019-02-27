@@ -9,5 +9,9 @@ if(!(isNaN(repetciones)) && repetciones != Infinity){
     //console.log(repetciones);
     }
 }
+else{
+    alert("Ingrese un numero valido.")
+}
+
 
 }//FIN DE LA FUNCIÓN
